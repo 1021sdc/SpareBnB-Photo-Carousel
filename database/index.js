@@ -38,7 +38,7 @@ const postPhotos = (listing, callback) => {
 
 // Update photos from DB.
 const updatePhotos = (targetID, listing, callback) => {
-  Listing.findOneAndUpdate({ listingID: targetID }, listing, (err, photos) => {
+  Listing.findOneAndUpdate({ listingID: targetID }, listing, (err) => {
     if (err) {
       callback(err);
     } else {
