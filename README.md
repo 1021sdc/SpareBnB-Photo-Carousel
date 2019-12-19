@@ -47,3 +47,21 @@ From within the root directory:
 npm install
 ```
 
+## SDC README
+### CRUD ROUTES:
+
+#### GET ('/listings/:id')
+
+> express route which serves up one listing info object from the db with the id parameter
+
+#### POST ('/listings')
+
+> express route which inserts a listing info object into the db
+
+#### PUT ('/listings/:id')
+
+> express route which updates a listing info object in the db with the id parameter
+
+#### DELETE ('/listings/:id')
+
+> express route which deletes a listing info object in the db with the id parameter

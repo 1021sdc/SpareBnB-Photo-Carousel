@@ -18,9 +18,41 @@ app.get('/photos/:listingID', (req, res) => {
   const targetID = req.params.listingID;
   db.getPhotos(targetID, (err, photos) => {
     if (err) {
-      res.status(500).send();
+      res.status(404).send();
     } else {
       res.status(200).send(photos);
+    }
+  });
+});
+
+app.post('/photos', (req, res) => {
+  db.getPhotos(req.body, (err) => {
+    if (err) {
+      res.status(500).send();
+    } else {
+      res.status(201).send();
+    }
+  });
+});
+
+app.put('/photos/:listingID', (req, res) => {
+  const targetID = req.params.listingID;
+  db.getPhotos(targetID, req.body, (err) => {
+    if (err) {
+      res.status(500).send();
+    } else {
+      res.status(201).send();
+    }
+  });
+});
+
+app.delete('/photos/:listingID', (req, res) => {
+  const targetID = req.params.listingID;
+  db.getPhotos(targetID, (err) => {
+    if (err) {
+      res.status(500).send();
+    } else {
+      res.status(201);
     }
   });
 });
