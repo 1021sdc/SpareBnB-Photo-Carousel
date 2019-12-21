@@ -6,9 +6,9 @@ mongoose.connect('mongodb://localhost/photos', { useNewUrlParser: true, useCreat
 // Schema
 const listingSchema = mongoose.Schema({
   listingID: { type: Number, unique: true },
-  listingDesc: String,
+  listingDescr: String,
   isSaved: Boolean,
-  listingPhotos: [{ url: String, desc: String, isVerified: Boolean }],
+  listingPhotos: [{ url: String, descr: String, isVerified: Boolean }],
 });
 
 // Listing model

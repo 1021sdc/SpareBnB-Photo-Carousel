@@ -11,7 +11,7 @@ const generateListingPhotos = () => {
   const usedPhotos = [];
 
   // Generate 5-15 photos per listing.
-  const numberOfPhotos = getRandomInt(5, 16);
+  const numberOfPhotos = getRandomInt(5, 10);
 
   // Add an arbitrary # of photo objects to an array.
   for (let i = 0; i < numberOfPhotos; i += 1) {
@@ -20,7 +20,7 @@ const generateListingPhotos = () => {
     if (!usedPhotos.includes(randomPhoto)) {
       const photoObj = {
         url: `https://betterphotosandhackers.s3-us-west-2.amazonaws.com/${randomPhoto}.jpg`,
-        desc: faker.lorem.sentence(),
+        descr: faker.lorem.sentence(),
         isVerified: faker.random.boolean(),
       };
       photosArray.push(photoObj);

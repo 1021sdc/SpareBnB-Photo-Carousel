@@ -26,4 +26,4 @@ mocks/
 
 public/dist/samplePhotos
 
-seedingData.csv
+data/seedingData.csv
