@@ -15,7 +15,7 @@ const generateListingPhotos = () => {
 
   // Add an arbitrary # of photo objects to an array.
   for (let i = 0; i < numberOfPhotos; i += 1) {
-    const randomPhoto = getRandomInt(1, 1000);
+    const randomPhoto = getRandomInt(1, 1000).toString().padStart(3, '0');
     // If the randomPhoto has not been used yet, create the photo object with that index.
     if (!usedPhotos.includes(randomPhoto)) {
       const photoObj = {

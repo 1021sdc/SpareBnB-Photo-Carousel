@@ -24,6 +24,8 @@ coverage
 build/
 mocks/
 
-public/dist/samplePhotos
-
 data/seedingData.csv
+
+public/dist/bundle.js
+
+my_test_result.csv

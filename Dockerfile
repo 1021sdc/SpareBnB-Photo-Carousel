@@ -1,5 +1,5 @@
 # What image do you want to start building on?
-FROM node:10.13-alpine
+FROM node:8.17.0-alpine3.11
 ENV NODE_ENV production
 
 # Make a folder in your image where your app's source code can live
@@ -12,10 +12,15 @@ WORKDIR /src/app
 COPY . /src/app
 
 # Does your app have any dependencies that should be installed?
-RUN npm install
+RUN apk add --no-cache --virtual .gyp \
+        python \
+        make \
+        g++ \
+    && npm install \
+    && apk del .gyp
 
 # What port will the container talk to the outside world with once created?
 EXPOSE 3001
 
 # How do you start your app?
-CMD [ "npm", "run", "deploy" ]
+CMD [ "npm", "run", "start" ]

@@ -1,17 +1,20 @@
-const { Client } = require('pg');
+const { Pool } = require('pg');
 
-const client = new Client({
+const pool = new Pool({
   host: 'localhost',
   database: 'bnbphotos',
   port: 5432,
+  max: 20,
+  idleTimeoutMillis: 30000,
+  connectionTimeoutMillis: 2000,
 });
 
-client.connect((err) => {
+pool.connect((err) => {
   if (err) {
-    console.error('connection error', err.stack);
+    console.error('postgres connection error', err.stack);
   } else {
-    console.log('connected');
+    console.log('postgres connected');
   }
 });
 
-module.exports = { client };
+module.exports = { pool };

@@ -11,3 +11,6 @@ docker-compose*
 README.md
 LICENSE
 .vscode
+data
+my_test_result.csv
+newrelic_agent.log

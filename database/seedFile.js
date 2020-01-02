@@ -7,7 +7,7 @@ const generateListingPhotos = require('./generatePhotos');
 function fileWriteSync(filePath) {
   const fd = fs.openSync(filePath, 'w');
 
-  for (let i = 0; i < 1000000; i += 1) {
+  for (let i = 0; i < 10000000; i += 1) {
     fs.writeSync(fd, `${i + 1}+${faker.lorem.sentence()}+${faker.random.boolean()}+${JSON.stringify(generateListingPhotos())}\n`, null, null);
   }
 
