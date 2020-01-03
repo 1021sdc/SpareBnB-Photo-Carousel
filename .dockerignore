@@ -11,6 +11,6 @@ docker-compose*
 README.md
 LICENSE
 .vscode
-data
+data/seedingData.csv
 my_test_result.csv
 newrelic_agent.log

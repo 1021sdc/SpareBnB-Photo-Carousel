@@ -10,7 +10,7 @@
   "scripts": {
     "react-dev": "webpack -d --watch",
     "build": "webpack -p",
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
     "seed": "node database/seedingFunction.js",
     "seedFile": "node database/seedFile.js",
     "deploy": "npm run seed && npm run start",

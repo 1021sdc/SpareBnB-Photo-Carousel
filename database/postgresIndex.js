@@ -1,8 +1,11 @@
 const { Pool } = require('pg');
+const postgresPassword = require('../data/postgresPassword.js');
 
 const pool = new Pool({
-  host: 'localhost',
+  host: 'ec2-34-216-220-184.us-west-2.compute.amazonaws.com',
   database: 'bnbphotos',
+  user: 'patrick',
+  password: postgresPassword.pass,
   port: 5432,
   max: 20,
   idleTimeoutMillis: 30000,
@@ -11,7 +14,7 @@ const pool = new Pool({
 
 pool.connect((err) => {
   if (err) {
-    console.error('postgres connection error', err.stack);
+    console.error('postgres connection error', err);
   } else {
     console.log('postgres connected');
   }

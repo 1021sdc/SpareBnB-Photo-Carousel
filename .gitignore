@@ -24,7 +24,7 @@ coverage
 build/
 mocks/
 
-data/seedingData.csv
+data/
 
 public/dist/bundle.js
 
