@@ -1,8 +1,5 @@
 node_modules
 npm-debug.log
-Dockerfile*
-docker-compose*
-.dockerignore
 .git
 .gitignore
 .env
@@ -14,3 +11,16 @@ LICENSE
 data/seedingData.csv
 my_test_result.csv
 newrelic_agent.log
+client
+public/dist/samplePhotos
+.babelrc
+.eslintignore
+.gitignore
+docker-compose.debug.yml
+docker-compose.yml
+test
+jest.config.js
+k6.js
+STYLE-GUIDE.md
+README.md
+webpack.config.js

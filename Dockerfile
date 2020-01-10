@@ -12,12 +12,7 @@ WORKDIR /src/app
 COPY . /src/app
 
 # Does your app have any dependencies that should be installed?
-RUN apk add --no-cache --virtual .gyp \
-        python \
-        make \
-        g++ \
-    && npm install \
-    && apk del .gyp
+RUN npm install
 
 # What port will the container talk to the outside world with once created?
 EXPOSE 3001

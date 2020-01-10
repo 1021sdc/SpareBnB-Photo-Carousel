@@ -2,7 +2,7 @@ const { Pool } = require('pg');
 const postgresPassword = require('../data/postgresPassword.js');
 
 const pool = new Pool({
-  host: 'ec2-34-216-220-184.us-west-2.compute.amazonaws.com',
+  host: 'ec2-35-163-196-224.us-west-2.compute.amazonaws.com',
   database: 'bnbphotos',
   user: 'patrick',
   password: postgresPassword.pass,
