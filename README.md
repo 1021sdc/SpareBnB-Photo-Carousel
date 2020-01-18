@@ -5,11 +5,11 @@
 
 ## Screenshots
 
-![SpareBnB](screenshot1.jpeg)
+![SpareBnB](screenshot1.png)
 
-![SpareBnB](screenshot2.jpeg)
+![SpareBnB](screenshot2.png)
 
-![SpareBnB](screenshot3.jpeg)
+![SpareBnB](screenshot3.png)
 
 ## Usage
 
