@@ -3,10 +3,9 @@
 > Photo Gallery and Carousel Module for SpareBnB, a home rental app
 
 
-## Table of Contents
+## Screenshot
 
-1. [Usage](#Usage)
-2. [Requirements](#requirements)
+![SpareBnB](screenshot.jpeg)
 
 ## Usage
 
@@ -31,7 +30,3 @@ $ npm run start
 - [npm](http://npmjs.com)
 - [Node.js](https://nodejs.org/en/download/)
 - [Git](https://git-scm.com)
-
-## Screenshot
-
-[SpareBnB]: https://imgur.com/a/F7jFotd
