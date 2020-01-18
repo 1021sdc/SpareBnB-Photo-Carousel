@@ -1,8 +1,8 @@
 {
-  "name": "airbnb-photos",
+  "name": "SpareBnB-Photo-Carousel",
   "version": "1.0.0",
-  "description": "",
-  "author": "William Chan",
+  "description": "Photo Gallery and Carousel Module for SpareBnB, a home rental app",
+  "author": "William Chan/Patrick Bennett",
   "license": "",
   "engines": {
     "node": ">=6.13.0"
@@ -13,7 +13,7 @@
     "start": "node server/index.js",
     "seed": "node database/seedingFunction.js",
     "seedFile": "node database/seedFile.js",
-    "deploy": "npm run seed && npm run start",
+    "deploy": "npm run seedFile && npm run start",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors"
