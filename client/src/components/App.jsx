@@ -45,12 +45,12 @@ class App extends Component {
   getPhotos() {
     axios.get(`/photos/${window.location.href.split('?id=')[1]}`)
       .then((response) => {
-        const listingObj = response.data[0];
-        const { listingDesc, listingPhotos, isSaved } = listingObj;
+        const listingObj = response.data;
+        const { listingdescr, listingphotos, issaved } = listingObj;
         this.setState({
-          listingDesc,
-          listingPhotos,
-          isSaved,
+          listingDesc: listingdescr,
+          listingPhotos: listingphotos,
+          isSaved: issaved,
           currentPhotoIndex: 0,
         });
       })

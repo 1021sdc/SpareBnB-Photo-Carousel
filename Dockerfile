@@ -1,5 +1,5 @@
 # What image do you want to start building on?
-FROM node:10.13-alpine
+FROM node:8.17.0-alpine3.11
 ENV NODE_ENV production
 
 # Make a folder in your image where your app's source code can live
@@ -18,4 +18,4 @@ RUN npm install
 EXPOSE 3001
 
 # How do you start your app?
-CMD [ "npm", "run", "deploy" ]
+CMD [ "npm", "run", "start" ]

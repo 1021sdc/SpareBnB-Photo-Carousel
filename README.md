@@ -1,13 +1,7 @@
-# HackerHome Photo Module
+# SpareBnB Photo Module
 
-> Photo Gallery and Carousel Module for HackerHome, a short-term vacation rental
+> Photo Gallery and Carousel Module for SpareBnB, a home rental app
 
-## Related Projects
-
-  - https://github.com/hacker-home/Airbnb-info
-  - https://github.com/hacker-home/Airbnb-booking
-  - https://github.com/hacker-home/Airbnb-reviews
-  - https://github.com/hacker-home/Airbnb-more-homes
 
 ## Table of Contents
 
@@ -17,33 +11,23 @@
 ## Usage
 
 ```bash
-# clone this repository
-$ git clone https://github.com/hacker-home/Photo-Module.git
-
 # Install dependencies
 $ npm install
 
-# Seed database
-$ npm run seed
+# Create CSV file to insert into PostgresSQL
+$ npm run seedFile
 
 # Bundle files with webpack
-$ npm run react-dev
+$ npm run build
 
 # Run the app
 $ npm run start
 ```
+
+> Copy CSV file into into PostgresSQL
 
 ## Requirements
 
 - [npm](http://npmjs.com)
 - [Node.js](https://nodejs.org/en/download/)
 - [Git](https://git-scm.com)
-
-### Installing Dependencies
-
-From within the root directory:
-
-```sh
-npm install
-```
-

@@ -23,3 +23,9 @@ coverage
 # Compiled Dirs (http://nodejs.org/api/addons.html)
 build/
 mocks/
+
+data/
+
+public/dist/bundle.js
+
+my_test_result.csv
