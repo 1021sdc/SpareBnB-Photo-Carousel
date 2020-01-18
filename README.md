@@ -34,4 +34,4 @@ $ npm run start
 
 ## Screenshot
 
-![SpareBnB](https://imgur.com/a/F7jFotd)
+[SpareBnB]: https://imgur.com/a/F7jFotd
