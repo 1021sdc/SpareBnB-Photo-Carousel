@@ -22,7 +22,7 @@ const SaveButton = (props) => {
 };
 
 SaveButton.propTypes = {
-  isSaved: PropTypes.bool.isRequired,
+  isSaved: PropTypes.string.isRequired,
   onClickSave: PropTypes.func.isRequired,
 };
 

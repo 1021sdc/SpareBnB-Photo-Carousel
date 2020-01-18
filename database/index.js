@@ -1,14 +1,15 @@
 const mongoose = require('mongoose');
 
+
 mongoose.connect('mongodb://localhost/photos', { useNewUrlParser: true, useCreateIndex: true });
 // mongoose.connect('mongodb://172.17.0.3/photos', { useNewUrlParser: true, useCreateIndex: true });
 
 // Schema
 const listingSchema = mongoose.Schema({
   listingID: { type: Number, unique: true },
-  listingDesc: String,
+  listingDescr: String,
   isSaved: Boolean,
-  listingPhotos: [{ url: String, desc: String, isVerified: Boolean }],
+  listingPhotos: [{ url: String, descr: String, isVerified: Boolean }],
 });
 
 // Listing model
@@ -25,7 +26,43 @@ const getPhotos = (targetID, callback) => {
   });
 };
 
+// Put photos from DB.
+const postPhotos = (listing, callback) => {
+  Listing.create(listing, (err) => {
+    if (err) {
+      callback(err);
+    } else {
+      callback(null);
+    }
+  });
+};
+
+// Update photos from DB.
+const updatePhotos = (targetID, listing, callback) => {
+  Listing.findOneAndUpdate({ listingID: targetID }, listing, (err) => {
+    if (err) {
+      callback(err);
+    } else {
+      callback(null);
+    }
+  });
+};
+
+// Put photos from DB.
+const deletePhotos = (listing, callback) => {
+  Listing.deleteOne(listing, (err) => {
+    if (err) {
+      callback(err);
+    } else {
+      callback(null);
+    }
+  });
+};
+
 module.exports = {
   Listing,
   getPhotos,
+  postPhotos,
+  updatePhotos,
+  deletePhotos,
 };
