@@ -31,3 +31,7 @@ $ npm run start
 - [npm](http://npmjs.com)
 - [Node.js](https://nodejs.org/en/download/)
 - [Git](https://git-scm.com)
+
+## Screenshot
+
+![SpareBnB](https://imgur.com/a/F7jFotd)
