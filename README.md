@@ -3,9 +3,13 @@
 > Photo Gallery and Carousel Module for SpareBnB, a home rental app
 
 
-## Screenshot
+## Screenshots
 
-![SpareBnB](screenshot.jpeg)
+![SpareBnB](screenshot1.jpeg)
+
+![SpareBnB](screenshot2.jpeg)
+
+![SpareBnB](screenshot3.jpeg)
 
 ## Usage
 
